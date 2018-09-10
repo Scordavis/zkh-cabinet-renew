@@ -121,24 +121,6 @@ button
 .attention
 	color: $attention
 
-// breadcrumbs
-.breadcrumb
-	padding: 0
-	font-size: 14px
-	background-color: transparent
-
-	&__link
-		color: $text
-
-	&-item /* not BAM cause its bootstrap class */
-		&:before
-			padding: 0!important
-
-		&.active
-			color: $attention
-			font-weight: 700
-			text-decoration: underline
-
 .cabinet-heading
 	margin-bottom: 28px
 	font-size: 24px
@@ -171,6 +153,8 @@ button
 			border-bottom: none
 		&--logo
 			border-bottom: none
+			img
+				width: 64px
 
 	&__icon
 		margin-right: 10px
@@ -237,10 +221,15 @@ button
 		color: $text
 		font-size: 20px
 		background-color: $accentBg
+		&--nobg
+			background-color: transparent
+		span
+			color: $attention
 
 	&__content-wrapper
 		position: relative
 		background-color: white
+		line-height: 1.2
 		&:before
 			position: absolute
 			top: -6px
@@ -261,6 +250,19 @@ button
 
 	&__data-balance
 		font-size: 16px
+
+	&__form-wrapper
+	&__form-heading
+		background-color: $accentBg
+	&__form-button
+		background-color: $accent
+		border-left: 1px solid white
+		opacity: 1
+		img
+			height: 30px
+
+		&:hover
+			opacity: .9
 
 // .callback
 .callback
