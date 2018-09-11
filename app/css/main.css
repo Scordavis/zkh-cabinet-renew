@@ -4885,7 +4885,7 @@ button {
     color: #fe1f04; }
 
 .nav {
-  height: 120px;
+  min-height: 120px;
   background-color: #7f7f7f;
   background-image: url("../img/nav_pattern.png");
   color: white; }
@@ -4989,6 +4989,8 @@ button {
       height: 30px; }
     .cabinet-info__form-button:hover {
       opacity: .9; }
+  .cabinet-info__program-description {
+    min-height: 80px; }
   .cabinet-info__icon {
     width: 30px; }
   .cabinet-info__guarantee-text {
@@ -4996,7 +4998,8 @@ button {
     font-size: 16px; }
 
 .consultant-section__data {
-  color: #337ab7; }
+  color: #337ab7;
+  min-height: 40px; }
 
 .consultant-section__phones-request {
   text-decoration: none;
@@ -5087,16 +5090,18 @@ button {
       text-transform: uppercase; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1199.98px) {
+  .cabinet-info__heading {
+    font-size: 16px; } }
+
 @media (max-width: 767.98px) {
-  .nav {
-    height: 100px; }
-    .nav__mobile {
-      display: none;
-      position: absolute;
-      top: 40px;
-      background-color: #337ab7;
-      border: 1px solid white;
-      z-index: 4; }
+  .nav__mobile {
+    display: none;
+    position: absolute;
+    top: 130px;
+    background-color: #7f7f7f;
+    border: 1px solid white;
+    z-index: 4; }
   .nav-show {
     display: block; }
   .nav-dropdown__form {
@@ -5104,8 +5109,6 @@ button {
   .nav-dropdown__content {
     position: relative;
     min-width: 100%; }
-  .user-readings__query {
-    font-weight: 700; }
   .footer-page {
     height: auto; }
     .footer-page__wrapper {

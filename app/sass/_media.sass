@@ -5,6 +5,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	// .cabinet-content
+	.cabinet-info
+		&__heading
+			font-size: 16px
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -14,12 +18,11 @@
 +media-breakpoint-down(sm)
 	// .nav
 	.nav
-		height: 100px
 		&__mobile
 			display: none
 			position: absolute
-			top: 40px
-			background-color: $accent
+			top: 130px
+			background-color: $text
 			border: 1px solid white
 			z-index: 4
 
@@ -33,11 +36,6 @@
 			position: relative
 			min-width: 100%
 
-
-	// .user-readings
-	.user-readings
-		&__query
-			font-weight: 700
 
 	// .footer-page
 	.footer-page
