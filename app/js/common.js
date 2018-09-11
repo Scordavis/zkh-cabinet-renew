@@ -1,18 +1,6 @@
 $(function() {
 
 	// Custom JS
-  // hover dropdown
-  $('.js-dropdown')
-  .mouseover(function() {
-    $( this ).parent().find( '.nav-dropdown__content' ).show(300)
-  })
-  .mouseleave(function() {
-    $('.nav-dropdown__content').hide(100)
-  });
-
-  $('.js-dropdown-form').click(function() {
-  	$('.nav-dropdown__content--form').toggle();
-	});
 
   // navbar hamburger
 
@@ -20,6 +8,12 @@ $(function() {
 	  	$('.js-navbar').toggleClass('nav-show');
 	});
 
+
+  // phone toggle
+  $('.js-phone-toggle')
+  .click(function() {
+    $( this ).parent().find( '.consultant-section__phones-answer' ).toggle(200)
+  });
 
 
 });
