@@ -4998,6 +4998,15 @@ button {
 .consultant-section__data {
   color: #337ab7; }
 
+.consultant-section__phones-request {
+  text-decoration: none;
+  cursor: pointer; }
+  .consultant-section__phones-request:hover {
+    text-decoration: underline; }
+
+.consultant-section__phones-answer {
+  display: none; }
+
 .callback {
   margin-bottom: 64px; }
   .callback__img {
