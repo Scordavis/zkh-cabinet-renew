@@ -312,6 +312,39 @@ button
 .chat-section
 	height: 56px
 
+.chat-area
+	background-color: white
+
+.company-chat
+	&__date
+		overflow: hidden
+		span
+			display: inline-block
+			width: 100%
+			vertical-align: middle
+			&:before
+				content: ''
+				position: relative
+				display: inline-block
+				top: -4px
+				left: -14px
+				width: 100%
+				height: 1px
+				background-color: $light-grey
+				margin-left: -100%
+			&:after
+				content: ''
+				position: relative
+				display: inline-block
+				top: -4px
+				right: -14px
+				width: 100%
+				height: 1px
+				background-color: $light-grey
+				margin-right: -100%
+	&__time
+	&__text
+		background-color: $accentBg
 // .footer-page
 .footer-page
 	height: 80px
