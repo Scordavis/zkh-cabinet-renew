@@ -5020,6 +5020,9 @@ button {
     -webkit-border-radius: 2px;
             border-radius: 2px; }
 
+.chat-section {
+  height: 56px; }
+
 .footer-page {
   height: 80px;
   background-color: #337ab7;
