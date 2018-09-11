@@ -292,28 +292,18 @@ button
 	&__phones-answer
 		display: none
 
-// .callback
-.callback
-	margin-bottom: 64px
-	&__description
-
-	&__img
-		height: 120px
-		max-height: 120px
-	&__text
-		line-height: 20px
-	&__form
-	&__textarea
-		margin-bottom: 12px
-		background-color: darken(white, 4%)
-		border-radius: 2px
 
 // .chat-section
 .chat-section
-	height: 56px
+	// height: 56px
 
 .chat-area
 	background-color: white
+
+.company-list
+	border-right: 1px solid $light-grey
+
+	&__name
 
 .company-chat
 	&__date
@@ -344,7 +334,32 @@ button
 				margin-right: -100%
 	&__time
 	&__text
+		position: relative
 		background-color: $accentBg
+		&:before
+			position: absolute
+			content: ""
+			top: 8px
+			left: -4px
+			width: 8px
+			height: 8px
+			transform: rotate(45deg)
+			background-color: inherit
+
+		&--own
+			background-color: lighten($accentBg, 8%)
+			&:before
+				display: none
+			&:after
+				position: absolute
+				content: ""
+				top: 8px
+				right: -4px
+				width: 8px
+				height: 8px
+				transform: rotate(45deg)
+				background-color: inherit
+
 // .footer-page
 .footer-page
 	height: 80px

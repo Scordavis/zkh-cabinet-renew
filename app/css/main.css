@@ -5007,24 +5007,11 @@ button {
 .consultant-section__phones-answer {
   display: none; }
 
-.callback {
-  margin-bottom: 64px; }
-  .callback__img {
-    height: 120px;
-    max-height: 120px; }
-  .callback__text {
-    line-height: 20px; }
-  .callback__textarea {
-    margin-bottom: 12px;
-    background-color: whitesmoke;
-    -webkit-border-radius: 2px;
-            border-radius: 2px; }
-
-.chat-section {
-  height: 56px; }
-
 .chat-area {
   background-color: white; }
+
+.company-list {
+  border-right: 1px solid #f0f0f0; }
 
 .company-chat__date {
   overflow: hidden; }
@@ -5054,7 +5041,34 @@ button {
       margin-right: -100%; }
 
 .company-chat__text {
+  position: relative;
   background-color: #D7E0EC; }
+  .company-chat__text:before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: inherit; }
+  .company-chat__text--own {
+    background-color: #f3f5f9; }
+    .company-chat__text--own:before {
+      display: none; }
+    .company-chat__text--own:after {
+      position: absolute;
+      content: "";
+      top: 8px;
+      right: -4px;
+      width: 8px;
+      height: 8px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      background-color: inherit; }
 
 .footer-page {
   height: 80px;
