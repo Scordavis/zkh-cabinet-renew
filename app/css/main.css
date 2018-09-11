@@ -4749,21 +4749,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   -webkit-border-bottom-left-radius: 0;
           border-bottom-left-radius: 0; }
 
-::-webkit-input-placeholder {
-  color: #666; }
-
-::-moz-placeholder {
-  color: #666; }
-
-:-ms-input-placeholder {
-  color: #666; }
-
-::-ms-input-placeholder {
-  color: #666; }
-
-::placeholder {
-  color: #666; }
-
 ::-moz-selection {
   background-color: #337ab7;
   color: #fff; }
@@ -4885,7 +4870,7 @@ button {
     color: #fe1f04; }
 
 .nav {
-  min-height: 120px;
+  height: 120px;
   background-color: #7f7f7f;
   background-image: url("../img/nav_pattern.png");
   color: white; }
@@ -4958,6 +4943,8 @@ button {
     position: relative;
     background-color: white;
     line-height: 1.2; }
+    .cabinet-info__content-wrapper--height {
+      height: 250px; }
     .cabinet-info__content-wrapper:before {
       position: absolute;
       top: -6px;
@@ -4971,6 +4958,22 @@ button {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
+    .cabinet-info__content-wrapper textarea {
+      resize: none;
+      color: #b2b2b2;
+      opacity: 1; }
+      .cabinet-info__content-wrapper textarea::-webkit-input-placeholder {
+        color: #b2b2b2; }
+      .cabinet-info__content-wrapper textarea:-moz-placeholder {
+        color: #b2b2b2;
+        opacity: 1; }
+      .cabinet-info__content-wrapper textarea::-moz-placeholder {
+        color: #b2b2b2;
+        opacity: 1; }
+      .cabinet-info__content-wrapper textarea:-ms-input-placeholder {
+        color: #b2b2b2; }
+      .cabinet-info__content-wrapper textarea::-ms-input-placeholder {
+        color: #b2b2b2; }
   .cabinet-info__data-link {
     font-size: 13px;
     line-height: 1; }
@@ -5092,7 +5095,19 @@ button {
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .cabinet-info__heading {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .cabinet-info__content-wrapper--height {
+    height: 278px; }
+  .cabinet-info__program-description {
+    min-height: 100px; } }
+
+@media (max-width: 991.98px) {
+  .nav {
+    height: auto; }
+  .cabinet-info__content-wrapper--height {
+    height: auto; }
+  .cabinet-info__program-description {
+    min-height: 64px; } }
 
 @media (max-width: 767.98px) {
   .nav__mobile {
@@ -5109,6 +5124,8 @@ button {
   .nav-dropdown__content {
     position: relative;
     min-width: 100%; }
+  .cabinet-info__program-description {
+    min-height: auto; }
   .footer-page {
     height: auto; }
     .footer-page__wrapper {

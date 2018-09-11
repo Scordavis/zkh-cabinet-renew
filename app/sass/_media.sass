@@ -10,8 +10,25 @@
 		&__heading
 			font-size: 16px
 
+		&__content-wrapper
+			&--height
+				height: 278px
+
+		&__program-description
+			min-height: 100px
+
 // ≥992px
 +media-breakpoint-down(md)
+	// .nav
+	.nav
+		height: auto
+	.cabinet-info
+		&__content-wrapper
+			&--height
+				height: auto
+
+		&__program-description
+			min-height: 64px
 
 
 // ≥768px
@@ -35,6 +52,10 @@
 		&__content
 			position: relative
 			min-width: 100%
+
+	.cabinet-info
+		&__program-description
+			min-height: auto
 
 
 	// .footer-page

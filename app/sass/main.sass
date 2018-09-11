@@ -2,9 +2,6 @@
 @import "fonts"
 @import "libs"
 
-::placeholder
-	color: #666
-
 ::selection
 	background-color: $accent
 	color: #fff
@@ -112,8 +109,6 @@ button
 		border-radius: 1px
 		background-color: white
 
-
-
 // colors
 .success
 	color: $success
@@ -128,10 +123,9 @@ button
 	span
 		color: $attention
 
-
 // .nav
 .nav
-	min-height: 120px
+	height: 120px
 	background-color: $text
 	background-image: url("../img/nav_pattern.png")
 	color: white
@@ -165,12 +159,6 @@ button
 		font-size: 13px
 
 		&--tel
-			// &:first-of-type
-			// 	&:before
-			// 		position: absolute
-			// 		left: -20px
-			// 		content: '\f098'
-			// 		font-family: FontAwesome
 
 		span
 			display: block
@@ -230,6 +218,8 @@ button
 		position: relative
 		background-color: white
 		line-height: 1.2
+		&--height
+			height: 250px
 		&:before
 			position: absolute
 			top: -6px
@@ -240,6 +230,24 @@ button
 			height: 12px
 			background-color: white
 			transform: rotate(45deg)
+		textarea
+			resize: none
+			&::placeholder
+			color: lighten($text, 20%)
+			opacity: 1
+			&::-webkit-input-placeholder
+				color: lighten($text, 20%)
+			&:-moz-placeholder
+				color: lighten($text, 20%)
+				opacity: 1
+			&::-moz-placeholder
+				color: lighten($text, 20%)
+				opacity: 1
+			&:-ms-input-placeholder
+				color: lighten($text, 20%)
+			&::-ms-input-placeholder
+				color: lighten($text, 20%)
+
 
 	&__data-row
 	&__data-text
